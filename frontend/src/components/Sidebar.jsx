@@ -5,7 +5,6 @@ const NAV_ITEMS = [
   { to: '/',           label: 'Dashboard' },
   { to: '/rules',      label: 'Rules' },
   { to: '/analysis',   label: 'Analysis' },
-  { to: '/automata',   label: 'Automata' },
   { to: '/simulator',  label: 'Simulator' },
   { to: '/optimize',   label: 'Optimization' },
 ];
@@ -16,10 +15,10 @@ export function Sidebar() {
       {/* Logo */}
       <div className="sidebar-logo">
         <div className="sidebar-logo-icon" style={{ background: 'transparent', padding: 0 }}>
-          <img src={logo} alt="FireOptima" style={{ width: 28, height: 28, borderRadius: 6, objectFit: 'contain', display: 'block' }} />
+          <img src={logo} alt="Dynamic Firewall Rule Optimization" style={{ width: 28, height: 28, borderRadius: 6, objectFit: 'contain', display: 'block' }} />
         </div>
-        <div className="sidebar-logo-text">
-          Fire<span>Optima</span>
+        <div className="sidebar-logo-text" style={{ fontSize: '0.82rem', lineHeight: 1.25 }}>
+          Dynamic Firewall Rule Optimization
         </div>
       </div>
 

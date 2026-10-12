@@ -27,7 +27,8 @@ export default function Dashboard() {
       {/* Hero */}
       <div style={{ marginBottom: 28 }}>
         <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', padding: '10px 0' }}>
-          <img src={logo} alt="FireOptima" style={{ width: 140, height: 140, objectFit: 'contain', marginBottom: 16, borderRadius: 16 }} />
+          <img src={logo} alt="Dynamic Firewall Rule Optimization" style={{ width: 140, height: 140, objectFit: 'contain', marginBottom: 16, borderRadius: 16 }} />
+          <h1 style={{ fontSize: '1.75rem', fontWeight: 800, marginBottom: 8 }}>Dynamic Firewall Rule Optimization</h1>
           <p style={{ color: 'var(--clr-text-muted)', maxWidth: 480, fontSize: '1.1rem' }}>
             Analyze, simulate, and optimize firewall rules using automata.
           </p>
@@ -51,12 +52,11 @@ export default function Dashboard() {
 
       {/* Quick links */}
       <div className="section-title">Quick Actions</div>
-      <div className="grid-3 mb-6">
+      <div className="grid-2 mb-6">
         {[
           { to: '/rules',     label: 'Manage Rules',       desc: 'Create, edit, or delete rules.' },
           { to: '/analysis',  label: 'Run Analysis',       desc: 'Find conflicts and redundancy.' },
           { to: '/simulator', label: 'Simulate Packet',    desc: 'Trace packet paths.' },
-          { to: '/automata',  label: 'View Automata',      desc: 'Visualize DFA state machines.' },
           { to: '/optimize',  label: 'Optimize Rules',     desc: 'Reduce rule count safely.' },
         ].map(({ to, label, desc }) => (
           <Link key={to} to={to} style={{ textDecoration: 'none' }}>

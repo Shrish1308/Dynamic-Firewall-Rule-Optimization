@@ -1,10 +1,10 @@
-# Dynamic Firewall Rule Optimization Using Automata
+# Dynamic Firewall Rule Optimization
 
 An automata-based firewall rule analysis and optimization system developed as a Theory of Computation course project.
 
 ## 📌 Project Overview
 
-**Dynamic Firewall Rule Optimization Using Automata** applies concepts from Theory of Computation, particularly **Finite Automata**, to analyze and optimize firewall rule sets.
+**Dynamic Firewall Rule Optimization** applies concepts from Theory of Computation, particularly **Finite Automata**, to analyze and optimize firewall rule sets.
 
 A firewall processes network packets by evaluating a sequence of rules based on properties such as source IP, destination IP, protocol, port, action, and priority. As firewall configurations grow, they may contain redundant, conflicting, shadowed, or unreachable rules.
 

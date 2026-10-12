@@ -131,27 +131,6 @@ export default function Simulator() {
               </div>
             ))}
           </Card>
-
-          {/* Automaton path */}
-          {result.automaton_path && (
-            <>
-              <div className="section-title mt-4">Automaton Traversal Path</div>
-              <Card>
-                <div className="chip-list">
-                  {result.automaton_path.map((state, i) => (
-                    <span key={i} style={{ display:'flex', alignItems:'center', gap:4 }}>
-                      <span className={`chip`} style={{
-                        background: state === 'ACCEPT' ? 'rgba(52,211,153,0.1)' : state === 'REJECT' ? 'rgba(248,113,113,0.1)' : '',
-                        color: state === 'ACCEPT' ? 'var(--clr-success)' : state === 'REJECT' ? 'var(--clr-danger)' : '',
-                        borderColor: state === 'ACCEPT' ? 'rgba(52,211,153,0.3)' : state === 'REJECT' ? 'rgba(248,113,113,0.3)' : '',
-                      }}>{state}</span>
-                      {i < result.automaton_path.length - 1 && <span className="mono text-muted" style={{ fontSize:'0.9rem' }}>→</span>}
-                    </span>
-                  ))}
-                </div>
-              </Card>
-            </>
-          )}
         </>
       )}
     </div>
